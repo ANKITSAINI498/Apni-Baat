@@ -1,1 +1,17 @@
-import {useChat} from '../context/ChatContext';import ConversationItem from '../components/sidebar/ConversationItem';export default function Favorites(){const {conversations,userById}=useChat();return <div className="simple-page"><div className="page-card wide"><h1>⭐ Starred & Favorites</h1>{conversations.filter(c=>c.favorite).map(c=><ConversationItem key={c.id} conv={c} user={userById(c.userId)}/>)}</div></div>}
+import { useChat } from "../context/ChatContext";
+import ConversationItem from "../components/sidebar/ConversationItem";
+export default function Favorites() {
+  const { conversations, userById } = useChat();
+  return (
+    <div className="simple-page">
+      <div className="page-card wide">
+        <h1>⭐ Starred & Favorites</h1>
+        {conversations
+          .filter((c) => c.favorite)
+          .map((c) => (
+            <ConversationItem key={c.id} conv={c} user={userById(c.userId)} />
+          ))}
+      </div>
+    </div>
+  );
+}
