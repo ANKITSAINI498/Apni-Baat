@@ -7,12 +7,13 @@ import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import Favorites from "./pages/Favorites";
 import Archived from "./pages/Archived";
+
 export default function App() {
   return (
     <AuthProvider>
       <ThemeProvider>
         <ChatProvider>
-          <BrowserRouter>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/profile" element={<Profile />} />
