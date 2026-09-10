@@ -1,1 +1,12 @@
-export default function Avatar({user,size='md',online=false}){return <span className={`avatar avatar-${size}`}>{user?.avatar?<img src={user.avatar} alt={user.name}/>:<span>{user?.name?.[0]||'?'}</span>}{online&&<i/>}</span>}
+export default function Avatar({ user, size = "md", online = false }) {
+  return (
+    <span className={`avatar avatar-${size}`}>
+      {user?.avatar ? (
+        <img src={user.avatar} alt={user.name} />
+      ) : (
+        <span>{user?.name?.[0] || "?"}</span>
+      )}
+      {online && <i />}
+    </span>
+  );
+}
