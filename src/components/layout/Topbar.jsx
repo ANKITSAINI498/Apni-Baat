@@ -8,7 +8,7 @@ export default function Topbar() {
     <header className="topbar">
       <div className="top-brand">
         <span className="brandmark">💬</span>
-        <span>BaatCheet</span>
+        <span>Apni-Baat</span>
       </div>
       <div className="global-search">
         <Search size={17} />
