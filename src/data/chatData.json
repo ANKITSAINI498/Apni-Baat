@@ -1,55 +1,372 @@
 {
-  "users":[
-    {"id":1,"name":"Rahul Sharma","city":"Jaipur","status":"Online","about":"Building products, one commit at a time 💻","phone":"+91 98XX XX1201","avatar":"https://i.pravatar.cc/150?img=12","isGroup":false},
-    {"id":2,"name":"Priya Verma","city":"Delhi","status":"Online","about":"Coffee + conversations ☕❤️","phone":"+91 98XX XX1202","avatar":"https://i.pravatar.cc/150?img=47","isGroup":false},
-    {"id":3,"name":"Aman Gupta","city":"Mumbai","status":"Away","about":"Always planning the next trip ✈️","phone":"+91 98XX XX1203","avatar":"https://i.pravatar.cc/150?img=33","isGroup":false},
-    {"id":4,"name":"Neha Singh","city":"Bangalore","status":"Offline","about":"Designing quietly, dreaming loudly.","phone":"+91 98XX XX1204","avatar":"https://i.pravatar.cc/150?img=44","isGroup":false},
-    {"id":5,"name":"Rohit Meena","city":"Pune","status":"Busy","about":"Java | Spring | React","phone":"+91 98XX XX1205","avatar":"https://i.pravatar.cc/150?img=59","isGroup":false},
-    {"id":6,"name":"Anjali Sharma","city":"Hyderabad","status":"Online","about":"Study. Build. Repeat. 🚀","phone":"+91 98XX XX1206","avatar":"https://i.pravatar.cc/150?img=49","isGroup":false},
-    {"id":7,"name":"Vikas Kumar","city":"Chandigarh","status":"Away","about":"Music on, world off 🎧","phone":"+91 98XX XX1207","avatar":"https://i.pravatar.cc/150?img=68","isGroup":false},
-    {"id":8,"name":"Pooja Verma","city":"Lucknow","status":"Online","about":"Food explorer 🍜","phone":"+91 98XX XX1208","avatar":"https://i.pravatar.cc/150?img=32","isGroup":false},
-    {"id":9,"name":"Code Friends 💻","city":"India","status":"Online","about":"A friendly coding group","phone":"Group • 8 members","avatar":"https://i.pravatar.cc/150?img=11","isGroup":true,"members":[1,2,5,6,7,8,3,4]}
+  "users": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "city": "Jaipur",
+      "status": "Online",
+      "about": "Building products, one commit at a time 💻",
+      "phone": "+91 98XX XX1201",
+      "avatar": "https://i.pravatar.cc/150?img=12",
+      "isGroup": false
+    },
+    {
+      "id": 2,
+      "name": "Priya Verma",
+      "city": "Delhi",
+      "status": "Online",
+      "about": "Coffee + conversations ☕❤️",
+      "phone": "+91 98XX XX1202",
+      "avatar": "https://i.pravatar.cc/150?img=47",
+      "isGroup": false
+    },
+    {
+      "id": 3,
+      "name": "Aman Gupta",
+      "city": "Mumbai",
+      "status": "Away",
+      "about": "Always planning the next trip ✈️",
+      "phone": "+91 98XX XX1203",
+      "avatar": "https://i.pravatar.cc/150?img=33",
+      "isGroup": false
+    },
+    {
+      "id": 4,
+      "name": "Neha Singh",
+      "city": "Bangalore",
+      "status": "Offline",
+      "about": "Designing quietly, dreaming loudly.",
+      "phone": "+91 98XX XX1204",
+      "avatar": "https://i.pravatar.cc/150?img=44",
+      "isGroup": false
+    },
+    {
+      "id": 5,
+      "name": "Rohit Meena",
+      "city": "Pune",
+      "status": "Busy",
+      "about": "Java | Spring | React",
+      "phone": "+91 98XX XX1205",
+      "avatar": "https://i.pravatar.cc/150?img=59",
+      "isGroup": false
+    },
+    {
+      "id": 6,
+      "name": "Anjali Sharma",
+      "city": "Hyderabad",
+      "status": "Online",
+      "about": "Study. Build. Repeat. 🚀",
+      "phone": "+91 98XX XX1206",
+      "avatar": "https://i.pravatar.cc/150?img=49",
+      "isGroup": false
+    },
+    {
+      "id": 7,
+      "name": "Vikas Kumar",
+      "city": "Chandigarh",
+      "status": "Away",
+      "about": "Music on, world off 🎧",
+      "phone": "+91 98XX XX1207",
+      "avatar": "https://i.pravatar.cc/150?img=68",
+      "isGroup": false
+    },
+    {
+      "id": 8,
+      "name": "Pooja Verma",
+      "city": "Lucknow",
+      "status": "Online",
+      "about": "Food explorer 🍜",
+      "phone": "+91 98XX XX1208",
+      "avatar": "https://i.pravatar.cc/150?img=32",
+      "isGroup": false
+    },
+    {
+      "id": 9,
+      "name": "Code Friends 💻",
+      "city": "India",
+      "status": "Online",
+      "about": "A friendly coding group",
+      "phone": "Group • 8 members",
+      "avatar": "https://i.pravatar.cc/150?img=11",
+      "isGroup": true,
+      "members": [1, 2, 5, 6, 7, 8, 3, 4]
+    }
   ],
-  "conversations":[
-    {"id":101,"userId":1,"favorite":true,"pinned":true,"muted":false,"archived":false,"unread":2},
-    {"id":102,"userId":2,"favorite":true,"pinned":false,"muted":false,"archived":false,"unread":0},
-    {"id":103,"userId":3,"favorite":false,"pinned":false,"muted":true,"archived":false,"unread":4},
-    {"id":104,"userId":4,"favorite":false,"pinned":false,"muted":false,"archived":true,"unread":0},
-    {"id":105,"userId":5,"favorite":true,"pinned":false,"muted":false,"archived":false,"unread":1},
-    {"id":106,"userId":6,"favorite":false,"pinned":false,"muted":false,"archived":false,"unread":0},
-    {"id":107,"userId":9,"favorite":true,"pinned":true,"muted":false,"archived":false,"unread":3}
+  "conversations": [
+    {
+      "id": 101,
+      "userId": 1,
+      "favorite": true,
+      "pinned": true,
+      "muted": false,
+      "archived": false,
+      "unread": 2
+    },
+    {
+      "id": 102,
+      "userId": 2,
+      "favorite": true,
+      "pinned": false,
+      "muted": false,
+      "archived": false,
+      "unread": 0
+    },
+    {
+      "id": 103,
+      "userId": 3,
+      "favorite": false,
+      "pinned": false,
+      "muted": true,
+      "archived": false,
+      "unread": 4
+    },
+    {
+      "id": 104,
+      "userId": 4,
+      "favorite": false,
+      "pinned": false,
+      "muted": false,
+      "archived": true,
+      "unread": 0
+    },
+    {
+      "id": 105,
+      "userId": 5,
+      "favorite": true,
+      "pinned": false,
+      "muted": false,
+      "archived": false,
+      "unread": 1
+    },
+    {
+      "id": 106,
+      "userId": 6,
+      "favorite": false,
+      "pinned": false,
+      "muted": false,
+      "archived": false,
+      "unread": 0
+    },
+    {
+      "id": 107,
+      "userId": 9,
+      "favorite": true,
+      "pinned": true,
+      "muted": false,
+      "archived": false,
+      "unread": 3
+    }
   ],
-  "messages":{
-    "101":[
-      {"id":"101-1","sender":"them","text":"Hey bro, kal milte hain? 👋","time":"10:32 AM","status":"read","starred":false,"pinned":false},
-      {"id":"101-2","sender":"me","text":"Haan, definitely 👍","time":"10:34 AM","status":"read","starred":true,"pinned":true},
-      {"id":"101-3","sender":"them","text":"Perfect. Coffee meri taraf se ☕","time":"10:35 AM","status":"read","starred":false,"pinned":false}
+  "messages": {
+    "101": [
+      {
+        "id": "101-1",
+        "sender": "them",
+        "text": "Hey bro, kal milte hain? 👋",
+        "time": "10:32 AM",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      },
+      {
+        "id": "101-2",
+        "sender": "me",
+        "text": "Haan, definitely 👍",
+        "time": "10:34 AM",
+        "status": "read",
+        "starred": true,
+        "pinned": true
+      },
+      {
+        "id": "101-3",
+        "sender": "them",
+        "text": "Perfect. Coffee meri taraf se ☕",
+        "time": "10:35 AM",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      }
     ],
-    "102":[
-      {"id":"102-1","sender":"them","text":"Good morning 😊 Aaj ka plan kya hai?","time":"9:10 AM","status":"read","starred":false,"pinned":false},
-      {"id":"102-2","sender":"me","text":"Coding + thoda break. Tum?","time":"9:14 AM","status":"read","starred":false,"pinned":false},
-      {"id":"102-3","sender":"them","text":"Aaj tumse baat karke mood aur achha ho gaya ❤️","time":"9:15 AM","status":"read","starred":true,"pinned":false}
+    "102": [
+      {
+        "id": "102-1",
+        "sender": "them",
+        "text": "Good morning 😊 Aaj ka plan kya hai?",
+        "time": "9:10 AM",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      },
+      {
+        "id": "102-2",
+        "sender": "me",
+        "text": "Coding + thoda break. Tum?",
+        "time": "9:14 AM",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      },
+      {
+        "id": "102-3",
+        "sender": "them",
+        "text": "Aaj tumse baat karke mood aur achha ho gaya ❤️",
+        "time": "9:15 AM",
+        "status": "read",
+        "starred": true,
+        "pinned": false
+      }
     ],
-    "103":[{"id":"103-1","sender":"them","text":"Weekend trip ke liye ready? ✈️","time":"Yesterday","status":"read","starred":false,"pinned":false}],
-    "104":[{"id":"104-1","sender":"them","text":"Let's catch up sometime!","time":"Mon","status":"read","starred":false,"pinned":false}],
-    "105":[{"id":"105-1","sender":"them","text":"Spring Boot project almost done 🔥","time":"11:02 AM","status":"read","starred":false,"pinned":false},{"id":"105-2","sender":"me","text":"Nice! Send the API when ready.","time":"11:05 AM","status":"delivered","starred":false,"pinned":false}],
-    "106":[{"id":"106-1","sender":"them","text":"Consistency > Motivation. Keep going! 🚀","time":"8:42 AM","status":"read","starred":false,"pinned":false}],
-    "107":[{"id":"107-1","sender":"them","senderName":"Rahul","text":"Guys, meeting tomorrow at 10 AM.","time":"Yesterday","status":"read","starred":false,"pinned":true},{"id":"107-2","sender":"them","senderName":"Priya","text":"Noted ❤️","time":"Yesterday","status":"read","starred":false,"pinned":false},{"id":"107-3","sender":"me","text":"I'll join on time 👍","time":"Yesterday","status":"read","starred":true,"pinned":false}]
+    "103": [
+      {
+        "id": "103-1",
+        "sender": "them",
+        "text": "Weekend trip ke liye ready? ✈️",
+        "time": "Yesterday",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      }
+    ],
+    "104": [
+      {
+        "id": "104-1",
+        "sender": "them",
+        "text": "Let's catch up sometime!",
+        "time": "Mon",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      }
+    ],
+    "105": [
+      {
+        "id": "105-1",
+        "sender": "them",
+        "text": "Spring Boot project almost done 🔥",
+        "time": "11:02 AM",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      },
+      {
+        "id": "105-2",
+        "sender": "me",
+        "text": "Nice! Send the API when ready.",
+        "time": "11:05 AM",
+        "status": "delivered",
+        "starred": false,
+        "pinned": false
+      }
+    ],
+    "106": [
+      {
+        "id": "106-1",
+        "sender": "them",
+        "text": "Consistency > Motivation. Keep going! 🚀",
+        "time": "8:42 AM",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      }
+    ],
+    "107": [
+      {
+        "id": "107-1",
+        "sender": "them",
+        "senderName": "Rahul",
+        "text": "Guys, meeting tomorrow at 10 AM.",
+        "time": "Yesterday",
+        "status": "read",
+        "starred": false,
+        "pinned": true
+      },
+      {
+        "id": "107-2",
+        "sender": "them",
+        "senderName": "Priya",
+        "text": "Noted ❤️",
+        "time": "Yesterday",
+        "status": "read",
+        "starred": false,
+        "pinned": false
+      },
+      {
+        "id": "107-3",
+        "sender": "me",
+        "text": "I'll join on time 👍",
+        "time": "Yesterday",
+        "status": "read",
+        "starred": true,
+        "pinned": false
+      }
+    ]
   },
-  "quickReplies":["How are you?","Tell me a joke 😂","Motivate me 💪","Good morning ☀️","What's up?"],
-  "responses":{
-    "greeting":["Hey! 👋 Kaise ho?","Hello 😊 Kya haal hai?","Heyy! Long time 😄","Hi! Aaj ka din kaisa ja raha hai?"],
-    "goodbye":["Okay, milte hain! 👋","Take care! Talk soon 😊","Bye bye, have a great day!"],
-    "romantic":["Aaj tumse baat karke mood aur achha ho gaya ❤️","Tumhara message aate hi smile aa jaati hai 😊","Coffee + long conversation = perfect evening ☕❤️","Tum itne sweet messages kaise kar lete ho? 😄❤️"],
-    "joke":["Programmer ko coffee kyun pasand hoti hai? Kyuki bina Java ke kaam nahi chalta ☕😂","Bug bola: Main feature hoon. 😭😂","Developer ka favourite place? Git-ara! 🎸😂"],
-    "motivation":["Slow progress bhi progress hai. Bas rukna mat. 🚀","Aaj ka small step kal ka big result ban sakta hai.","Consistency > Motivation.","Keep coding. Keep learning. Keep building. 💻🔥"],
-    "coding":["Clean code likho, phir coffee break ☕💻","Java + Spring Boot + React is a solid combo! 🔥","Ek bug at a time. You got this!"],
-    "study":["Pomodoro try karo: 25 min focus, 5 min break. 📚","Notes ko small chunks mein revise karo.","Daily consistency beats last-minute study."],
-    "work":["Let's break the task into smaller pieces.","Sounds good. Ship the first version, then improve it. 🚀"],
-    "food":["Aaj kuch spicy ho jaye? 🌶️😂","Food first, bugs later! 🍜"],
-    "travel":["Jaipur se next trip kahan? ✈️","Let's make a weekend itinerary! 🗺️"],
-    "thanks":["Anytime! 😊","Mention not! ❤️","Always happy to help."],
-    "emoji":["😂❤️🔥","Haha same energy! 😄","That emoji says everything 😂"],
-    "general":["Haan, bilkul! 😊","Interesting — tell me more.","Sounds good to me 👍","Let's do it! 🚀"]
+  "quickReplies": [
+    "How are you?",
+    "Tell me a joke 😂",
+    "Motivate me 💪",
+    "Good morning ☀️",
+    "What's up?"
+  ],
+  "responses": {
+    "greeting": [
+      "Hey! 👋 Kaise ho?",
+      "Hello 😊 Kya haal hai?",
+      "Heyy! Long time 😄",
+      "Hi! Aaj ka din kaisa ja raha hai?"
+    ],
+    "goodbye": [
+      "Okay, milte hain! 👋",
+      "Take care! Talk soon 😊",
+      "Bye bye, have a great day!"
+    ],
+    "romantic": [
+      "Aaj tumse baat karke mood aur achha ho gaya ❤️",
+      "Tumhara message aate hi smile aa jaati hai 😊",
+      "Coffee + long conversation = perfect evening ☕❤️",
+      "Tum itne sweet messages kaise kar lete ho? 😄❤️"
+    ],
+    "joke": [
+      "Programmer ko coffee kyun pasand hoti hai? Kyuki bina Java ke kaam nahi chalta ☕😂",
+      "Bug bola: Main feature hoon. 😭😂",
+      "Developer ka favourite place? Git-ara! 🎸😂"
+    ],
+    "motivation": [
+      "Slow progress bhi progress hai. Bas rukna mat. 🚀",
+      "Aaj ka small step kal ka big result ban sakta hai.",
+      "Consistency > Motivation.",
+      "Keep coding. Keep learning. Keep building. 💻🔥"
+    ],
+    "coding": [
+      "Clean code likho, phir coffee break ☕💻",
+      "Java + Spring Boot + React is a solid combo! 🔥",
+      "Ek bug at a time. You got this!"
+    ],
+    "study": [
+      "Pomodoro try karo: 25 min focus, 5 min break. 📚",
+      "Notes ko small chunks mein revise karo.",
+      "Daily consistency beats last-minute study."
+    ],
+    "work": [
+      "Let's break the task into smaller pieces.",
+      "Sounds good. Ship the first version, then improve it. 🚀"
+    ],
+    "food": ["Aaj kuch spicy ho jaye? 🌶️😂", "Food first, bugs later! 🍜"],
+    "travel": [
+      "Jaipur se next trip kahan? ✈️",
+      "Let's make a weekend itinerary! 🗺️"
+    ],
+    "thanks": ["Anytime! 😊", "Mention not! ❤️", "Always happy to help."],
+    "emoji": [
+      "😂❤️🔥",
+      "Haha same energy! 😄",
+      "That emoji says everything 😂"
+    ],
+    "general": [
+      "Haan, bilkul! 😊",
+      "Interesting — tell me more.",
+      "Sounds good to me 👍",
+      "Let's do it! 🚀"
+    ]
   }
 }
