@@ -7,7 +7,7 @@ import ErrorBoundary from "./components/common/ErrorBoundary";
 const root = document.getElementById("root");
 
 if (!root) {
-  throw new Error("Anp root element #root was not found.");
+  throw new Error("Apni-Baat root element #root was not found.");
 }
 
 createRoot(root).render(
