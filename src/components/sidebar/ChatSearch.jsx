@@ -1,1 +1,20 @@
-import {Search,X} from 'lucide-react';import {useChat} from '../../context/ChatContext';export default function ChatSearch(){const {query,setQuery}=useChat();return <div className="searchbox"><Search size={17}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search conversations..."/>{query&&<button onClick={()=>setQuery('')}><X size={15}/></button>}</div>}
+import { Search, X } from "lucide-react";
+import { useChat } from "../../context/ChatContext";
+export default function ChatSearch() {
+  const { query, setQuery } = useChat();
+  return (
+    <div className="searchbox">
+      <Search size={17} />
+      <input
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search conversations..."
+      />
+      {query && (
+        <button onClick={() => setQuery("")}>
+          <X size={15} />
+        </button>
+      )}
+    </div>
+  );
+}

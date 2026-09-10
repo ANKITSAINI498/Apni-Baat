@@ -1,1 +1,23 @@
-import {useChat} from '../../context/ChatContext';export default function ChatFilters(){const {filter,setFilter}=useChat();return <div className="filters">{[['all','All'],['unread','Unread'],['favorites','Favorites'],['groups','Groups'],['archived','Archived']].map(([k,l])=><button key={k} className={filter===k?'sel':''} onClick={()=>setFilter(k)}>{l}</button>)}</div>}
+import { useChat } from "../../context/ChatContext";
+export default function ChatFilters() {
+  const { filter, setFilter } = useChat();
+  return (
+    <div className="filters">
+      {[
+        ["all", "All"],
+        ["unread", "Unread"],
+        ["favorites", "Favorites"],
+        ["groups", "Groups"],
+        ["archived", "Archived"],
+      ].map(([k, l]) => (
+        <button
+          key={k}
+          className={filter === k ? "sel" : ""}
+          onClick={() => setFilter(k)}
+        >
+          {l}
+        </button>
+      ))}
+    </div>
+  );
+}
