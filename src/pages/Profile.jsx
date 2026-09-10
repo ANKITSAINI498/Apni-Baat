@@ -1,1 +1,33 @@
-import {useState} from 'react';import {useChat} from '../context/ChatContext';import Avatar from '../components/common/Avatar';export default function Profile(){const {profile,setProfile,notify}=useChat();const [form,setForm]=useState(profile);return <div className="simple-page"><div className="page-card"><Avatar user={form} size="xl"/><h1>My Profile</h1>{['name','about','status','avatar'].map(k=><label key={k}>{k}<input value={form[k]||''} onChange={e=>setForm({...form,[k]:e.target.value})}/></label>)}<button className="primary" onClick={()=>{setProfile(form);notify('Profile saved to LocalStorage')}}>Save changes</button></div></div>}
+import { useState } from "react";
+import { useChat } from "../context/ChatContext";
+import Avatar from "../components/common/Avatar";
+export default function Profile() {
+  const { profile, setProfile, notify } = useChat();
+  const [form, setForm] = useState(profile);
+  return (
+    <div className="simple-page">
+      <div className="page-card">
+        <Avatar user={form} size="xl" />
+        <h1>My Profile</h1>
+        {["name", "about", "status", "avatar"].map((k) => (
+          <label key={k}>
+            {k}
+            <input
+              value={form[k] || ""}
+              onChange={(e) => setForm({ ...form, [k]: e.target.value })}
+            />
+          </label>
+        ))}
+        <button
+          className="primary"
+          onClick={() => {
+            setProfile(form);
+            notify("Profile saved to LocalStorage");
+          }}
+        >
+          Save changes
+        </button>
+      </div>
+    </div>
+  );
+}
