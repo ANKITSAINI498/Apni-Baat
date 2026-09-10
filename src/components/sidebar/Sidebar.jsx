@@ -13,7 +13,7 @@ export default function Sidebar() {
             <MessageCircle />
           </span>
           <span>
-            <b>BaatCheet</b>
+            <b>Apni-Baat</b>
             <small>Connect. Chat. Share. Repeat.</small>
           </span>
         </div>
