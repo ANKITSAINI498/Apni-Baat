@@ -1,0 +1,1 @@
+export default function Modal({open,title,children,onClose}){if(!open)return null;return <div className="modal-backdrop" onClick={onClose}><div className="modalx" onClick={e=>e.stopPropagation()}><div className="modal-head"><b>{title}</b><button onClick={onClose}>×</button></div>{children}</div></div>}
