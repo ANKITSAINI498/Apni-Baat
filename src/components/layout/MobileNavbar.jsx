@@ -1,1 +1,31 @@
-import {MessageCircle,Users,Star,Settings} from 'lucide-react';import {useChat} from '../../context/ChatContext';export default function MobileNavbar(){const {filter,setFilter,notify}=useChat();return <nav className="mobile-nav"><button className={filter==='all'?'active':''} onClick={()=>setFilter('all')}><MessageCircle/><span>Chats</span></button><button onClick={()=>notify('Contacts demo')}><Users/><span>Contacts</span></button><button className={filter==='favorites'?'active':''} onClick={()=>setFilter('favorites')}><Star/><span>Favorites</span></button><button onClick={()=>notify('Settings page')}><Settings/><span>Settings</span></button></nav>}
+import { MessageCircle, Users, Star, Settings } from "lucide-react";
+import { useChat } from "../../context/ChatContext";
+export default function MobileNavbar() {
+  const { filter, setFilter, notify } = useChat();
+  return (
+    <nav className="mobile-nav">
+      <button
+        className={filter === "all" ? "active" : ""}
+        onClick={() => setFilter("all")}
+      >
+        <MessageCircle />
+        <span>Chats</span>
+      </button>
+      <button onClick={() => notify("Contacts demo")}>
+        <Users />
+        <span>Contacts</span>
+      </button>
+      <button
+        className={filter === "favorites" ? "active" : ""}
+        onClick={() => setFilter("favorites")}
+      >
+        <Star />
+        <span>Favorites</span>
+      </button>
+      <button onClick={() => notify("Settings page")}>
+        <Settings />
+        <span>Settings</span>
+      </button>
+    </nav>
+  );
+}
