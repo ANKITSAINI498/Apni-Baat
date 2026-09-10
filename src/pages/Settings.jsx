@@ -1,1 +1,41 @@
-import {useTheme} from '../context/ThemeContext';import {useChat} from '../context/ChatContext';export default function Settings(){const {theme,toggle}=useTheme();const {notify}=useChat();return <div className="simple-page"><div className="page-card"><h1>Settings</h1><div className="setting-row"><span>Appearance<small>Persisted locally</small></span><button className="primary" onClick={toggle}>{theme==='dark'?'Switch to light':'Switch to dark'}</button></div><div className="setting-row"><span>Notifications<small>Demo notification center</small></span><button onClick={()=>notify('Notifications are enabled')}>Test</button></div><div className="setting-row"><span>Data<small>Chats are stored in your browser.</small></span><button onClick={()=>notify('Local data remains private to this demo browser')}>About</button></div></div></div>}
+import { useTheme } from "../context/ThemeContext";
+import { useChat } from "../context/ChatContext";
+export default function Settings() {
+  const { theme, toggle } = useTheme();
+  const { notify } = useChat();
+  return (
+    <div className="simple-page">
+      <div className="page-card">
+        <h1>Settings</h1>
+        <div className="setting-row">
+          <span>
+            Appearance<small>Persisted locally</small>
+          </span>
+          <button className="primary" onClick={toggle}>
+            {theme === "dark" ? "Switch to light" : "Switch to dark"}
+          </button>
+        </div>
+        <div className="setting-row">
+          <span>
+            Notifications<small>Demo notification center</small>
+          </span>
+          <button onClick={() => notify("Notifications are enabled")}>
+            Test
+          </button>
+        </div>
+        <div className="setting-row">
+          <span>
+            Data<small>Chats are stored in your browser.</small>
+          </span>
+          <button
+            onClick={() =>
+              notify("Local data remains private to this demo browser")
+            }
+          >
+            About
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
