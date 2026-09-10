@@ -26,7 +26,7 @@ export default function MainLayout() {
           ) : (
             <div className="welcome">
               <div className="welcome-orb">💬</div>
-              <h1>Welcome to BaatCheet</h1>
+              <h1>Welcome to Apni-Baat</h1>
               <p>Select a conversation and start connecting.</p>
               <span>Connect. Chat. Share. Repeat.</span>
             </div>
