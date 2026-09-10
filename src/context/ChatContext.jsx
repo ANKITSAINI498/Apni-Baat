@@ -21,7 +21,7 @@ export function ChatProvider({ children }) {
   const [detailsOpen, setDetailsOpen] = useState(true);
   const [profile, setProfile] = useState(() =>
     loadState("baatchet-profile", {
-      name: "Ankit",
+      name: "Ankit Saini",
       about: "Connect. Chat. Share. Repeat.",
       status: "Online",
       avatar: "https://i.pravatar.cc/150?img=68",
