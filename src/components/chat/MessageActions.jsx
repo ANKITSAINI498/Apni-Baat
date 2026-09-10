@@ -1,1 +1,42 @@
-import {Copy,Edit3,Forward,Reply,Star,Pin,Trash2,SmilePlus} from 'lucide-react';export default function MessageActions({message,onAction}){return <div className="msg-actions"><button title="Reply" onClick={()=>onAction('reply')}><Reply/></button><button title="React" onClick={()=>onAction('react')}><SmilePlus/></button><button title="Copy" onClick={()=>onAction('copy')}><Copy/></button>{message.sender==='me'&&!message.deleted&&<button title="Edit" onClick={()=>onAction('edit')}><Edit3/></button>}<button title="Forward" onClick={()=>onAction('forward')}><Forward/></button><button title="Star" onClick={()=>onAction('star')}><Star/></button><button title="Pin" onClick={()=>onAction('pin')}><Pin/></button><button title="Delete" onClick={()=>onAction('delete')}><Trash2/></button></div>}
+import {
+  Copy,
+  Edit3,
+  Forward,
+  Reply,
+  Star,
+  Pin,
+  Trash2,
+  SmilePlus,
+} from "lucide-react";
+export default function MessageActions({ message, onAction }) {
+  return (
+    <div className="msg-actions">
+      <button title="Reply" onClick={() => onAction("reply")}>
+        <Reply />
+      </button>
+      <button title="React" onClick={() => onAction("react")}>
+        <SmilePlus />
+      </button>
+      <button title="Copy" onClick={() => onAction("copy")}>
+        <Copy />
+      </button>
+      {message.sender === "me" && !message.deleted && (
+        <button title="Edit" onClick={() => onAction("edit")}>
+          <Edit3 />
+        </button>
+      )}
+      <button title="Forward" onClick={() => onAction("forward")}>
+        <Forward />
+      </button>
+      <button title="Star" onClick={() => onAction("star")}>
+        <Star />
+      </button>
+      <button title="Pin" onClick={() => onAction("pin")}>
+        <Pin />
+      </button>
+      <button title="Delete" onClick={() => onAction("delete")}>
+        <Trash2 />
+      </button>
+    </div>
+  );
+}
