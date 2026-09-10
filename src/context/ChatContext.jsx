@@ -111,7 +111,7 @@ export function ChatProvider({ children }) {
           ],
         }));
         setTyping(false);
-        notify(`New message from ${selectedUser?.name || "BaatCheet"}`);
+        notify(`New message from ${selectedUser?.name || "Apni-Baat"}`);
       },
       1100 + Math.random() * 900,
     );
