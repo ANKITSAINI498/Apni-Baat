@@ -1,1 +1,17 @@
-import {useChat} from '../context/ChatContext';import ConversationItem from '../components/sidebar/ConversationItem';export default function Archived(){const {conversations,userById}=useChat();return <div className="simple-page"><div className="page-card wide"><h1>📦 Archived Chats</h1>{conversations.filter(c=>c.archived).map(c=><ConversationItem key={c.id} conv={c} user={userById(c.userId)}/>)}</div></div>}
+import { useChat } from "../context/ChatContext";
+import ConversationItem from "../components/sidebar/ConversationItem";
+export default function Archived() {
+  const { conversations, userById } = useChat();
+  return (
+    <div className="simple-page">
+      <div className="page-card wide">
+        <h1>📦 Archived Chats</h1>
+        {conversations
+          .filter((c) => c.archived)
+          .map((c) => (
+            <ConversationItem key={c.id} conv={c} user={userById(c.userId)} />
+          ))}
+      </div>
+    </div>
+  );
+}
